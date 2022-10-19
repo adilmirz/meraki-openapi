@@ -12,16 +12,16 @@ on:
 
 env:
   API_SPEC: openapi/spec2.json
-  APIX_SERVICE: meraki_dashboard
+  APIX_SERVICE: reporting
   APIX_CLI_NAME: apiregistryctl
   APIX_CLI_DOWNLOAD_URL: https://static.production.devnetcloud.com/libs/apixmanager-cli/latest/linux/amd64/apiregistryctl
   APIX_CLI_VERSION: latest
-  APIX_HOST: https://devnet-testing.cisco.com
+  APIX_HOST: https://devnet.cisco.com
   APIX_BASE_PATH: /v1/apiregistry-cisco
   APIX_AUTH_TYPE: oauth2
   APIX_OAUTH2_GRANT_TYPE: client_credentials
-  APIX_OAUTH2_TOKEN_URL: https://auth-devnet-stg.cisco.com/v1/auth/oauth/token
-  APIX_OAUTH2_CLIENT_ID: bu-service-client
+  APIX_OAUTH2_TOKEN_URL: https://auth-devnet.cisco.com/v1/auth/oauth/token
+  APIX_OAUTH2_CLIENT_ID: api-insights-umbrella-developer-service
   APIX_OAUTH2_CLIENT_SECRET: ${{ secrets.APIX_OAUTH2_CLIENT_SECRET }}
   RELEASE_REVISON: 10
 
